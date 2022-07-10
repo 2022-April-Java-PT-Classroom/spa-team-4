@@ -5,7 +5,7 @@ const Header = () => {
     
     return(
         <div>
-            <h1>JAK Mystery Educator</h1>
+            <h1>JAC Mystery Educator</h1>
             <ul>
                 <li>Home</li>
                 <li>Contact Us</li>
