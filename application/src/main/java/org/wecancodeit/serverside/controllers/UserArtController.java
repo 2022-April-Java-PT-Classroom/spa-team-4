@@ -33,16 +33,4 @@ public class UserArtController {
         return (Collection<UserArt>) userArtRepo.findAll();
     }
 
-//    @PutMapping ("/gallery/{id}/select-art")
-//    public Collection<UserArt> selectUserArt(@PathVariable Long id, @RequestBody String body) throws JSONException {
-//        JSONObject newUserArt = new JSONObject(body);
-//        Optional<UserArt> userArtToSelectOpt = userArtRepo.findById(id);
-//
-//        if (userArtToSelectOpt.isEmpty())userArtToSelectOpt.isPresent()) {
-//            userArtToSelectOpt.get().setSelected(userArtIsSelected);
-//            userArtRepo.save(userArtToSelectOpt.get());
-//        }
-//        return (Collection<UserArt>) userArtRepo.findAll();
-//    }
-
 }
