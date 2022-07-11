@@ -1,14 +1,20 @@
+import AppRouter from './Components/app-router';
+import { BrowserRouter } from 'react-router-dom';
 import Footer from './Components/footer';
 import Header from './Components/Header';
 import React from 'react';
-import style from "./style.module.scss"
 
 const App = () => {
   return (
     <div>
+       <BrowserRouter>
       <Header />
-      Hello React World!
-      <Footer />
+      <div>
+	   Hello React Test World
+        <AppRouter />
+      </div>
+    <Footer/>
+    </BrowserRouter>
     </div>
   );
 }
