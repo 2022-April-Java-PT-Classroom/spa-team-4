@@ -12,6 +12,6 @@ div {
   margin: auto;
 }
 
-h1 {
+h1, .colors {
   text-align: center;
 }
