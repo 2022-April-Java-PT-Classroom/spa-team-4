@@ -1,5 +1,6 @@
 const square = document.createElement('div');
 const box = document.querySelector('#box');
+const reset = document.querySelector('#reset');
 const redColor = document.querySelector('#red');
 const orangeColor = document.querySelector('#orange');
 const yellowColor = document.querySelector('#yellow');
@@ -14,17 +15,24 @@ const grayColor = document.querySelector('#gray');
 square.style.background = '#fff';
 
 window.addEventListener('load', function() {
-  for (i = 0; i < 625; i++) {
-    cloneSquare();
-  }
+  loadBox();
 });
 
 box.addEventListener('click', function(e) {
   e.target.style.background = 'black';
 });
 
-function cloneSquare() {
-  box.appendChild(square.cloneNode(true));
+reset.addEventListener('click', function() {
+  while (box.firstChild) {
+    box.removeChild(box.firstChild);
+  }
+  loadBox();
+});
+
+function loadBox() {
+  for (i = 0; i < 625; i++) {
+    box.appendChild(square.cloneNode(true));
+  }
 }
 
 function changeColor(color) {
