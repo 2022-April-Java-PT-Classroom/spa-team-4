@@ -7,7 +7,6 @@ div {
   display: grid;
   width: 500px;
   height: 500px;
-  background-color: #aaa;
   border: 1px solid #000;
   grid-template: repeat(25, 1fr) / repeat(25, 1fr);
   margin: auto;
