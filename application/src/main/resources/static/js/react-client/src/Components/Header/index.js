@@ -23,6 +23,7 @@ const Header = () => {
           <NavLink to={'/User-Gallery'}>Gallery</NavLink>
           <NavLink to={'About-us'}>About us</NavLink>
           <button onClick={toggleModal}>Contact Us</button>
+          <a href="sketchbox.html" target='_blank'>Create Your Own Art!</a>
         </ul>
       </div>
 
