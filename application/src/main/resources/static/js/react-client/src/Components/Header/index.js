@@ -35,7 +35,7 @@ const Header = () => {
           <p>
             To learn more about JAC Enterprises,
             <br />
-            <a href="https://github.com/cljenkinsjr/jackr-enterprises-site" target="_blank">click here</a>
+            <a href="jac/index.html" target="_blank">click here</a>
             .
           </p>
           <div className={style.close}>
