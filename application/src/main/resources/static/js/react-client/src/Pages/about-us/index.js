@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 
-const AboutUsScreen = () => {
+const AboutUs = () => {
     return (
         <div className ={style.aboutUs}>
             <h2>About Us</h2>
@@ -30,7 +30,7 @@ const AboutUsScreen = () => {
             <h3>Team Member C</h3>
             //inserting professional headshot
             <a href="https://github.com/louis2tch">GitHub</a>
-            //linkedIn 
+            <a href="https://www.linkedin.com/in/louis-tchamda-9589bb74/">LinkedIn</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan lacus in eros egestas, 
                 sit amet auctor odio egestas. Maecenas eu sollicitudin est. Pellentesque ornare nulla a ipsum 
                 accumsan tempor. Nulla facilisi. Etiam blandit, erat eget laoreet aliquet, nulla diam interdum 
@@ -82,7 +82,7 @@ const AboutUsScreen = () => {
                 erat volutpat. Aliquam sagittis pretium sodales. Orci varius natoque penatibus et magnis dis 
                 parturient montes, nascetur ridiculus mus. In tempor hendrerit elementum.</p>                  
         </div>
-    )
+    );
 }
 
-export default AboutUsScreen;
+export default AboutUs;

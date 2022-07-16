@@ -17,6 +17,7 @@ const Header = () => {
       <div className={style.header}>
         <h1>JAC Mystery Educator</h1>
         <ul className={style.navList}>
+      basicHeaderCSSBranchAisha
           <li>
             <NavLink to={'/'}><button>Home</button></NavLink>
           </li>
@@ -38,6 +39,15 @@ const Header = () => {
           <li>
             <a href="sketchbox.html" target='_blank'><button>Create Your Own Art!</button></a>
           </li>
+
+          <NavLink to={'/'}>Home</NavLink>
+          <NavLink to={'Nasa-Observatory'}>Nasa Observatory</NavLink>
+          <NavLink to={'Art Museum'}>Art Museum</NavLink>
+          <NavLink to={'/User-Gallery'}>Gallery</NavLink>
+          <NavLink to={'/about-us'}>About us</NavLink>
+          <button onClick={toggleModal}>Contact Us</button>
+          <a href="sketchbox.html" target='_blank'>Create Your Own Art!</a>
+        main
         </ul>
       </div>
 
