@@ -7,7 +7,7 @@ const NasaImages = ({ images }) => {
     // console.log(image.links && image.links[0].href);
     return (
       <div key={index}>
-        <p>Test</p>
+        {/* <p>Test</p> */}
         <img src={image.links && image.links[0].href} alt="" />
         <p></p>
       </div>

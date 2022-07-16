@@ -10,7 +10,7 @@ const Nasa = () => {
   
   useEffect(()=> {
     const fetchData = async () => {
-        const nasa = await Axios("https://images-api.nasa.gov/search?q={keywords}");
+        const nasa = await Axios("https://images-api.nasa.gov/search?q={q}}");
         // console.log(nasa.data);
         // console.log(nasa.data.collection.items);
         setImages(nasa.data.collection.items);
@@ -30,6 +30,8 @@ const Nasa = () => {
   return (
     <div>
       <h2>Nasa Images</h2>
+      <input type="text" placeholder="Search Nasa Database..." name="search"/>
+        <button type="submit">Submit</button>
       <section>
         {loading ? <h3>Loading ...</h3> : <NasaImages images={nasaImages}/>}
       </section>
