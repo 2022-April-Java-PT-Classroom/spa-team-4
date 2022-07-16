@@ -23,7 +23,7 @@ const Header = () => {
             <NavLink to={'/'}><button>Home</button></NavLink>
           </li>
           <li>
-            <NavLink to={'Nasa-Observatory'}><button>Nasa Observatory</button></NavLink>
+            <NavLink to={'/nasa-api'}><button>Nasa Observatory</button></NavLink>
           </li>
           <li>
             <NavLink to={'Art Museum'}><button>Art Museum</button></NavLink>
@@ -40,19 +40,6 @@ const Header = () => {
           <li>
             <a href="sketchbox.html" target='_blank'><button>Create Your Own Art!</button></a>
           </li>
-
-          <NavLink to={'/'}>Home</NavLink>
-          <NavLink to={'/nasa-api'}>Nasa Observatory</NavLink>
-          <NavLink to={'Art Museum'}>Art Museum</NavLink>
-          <NavLink to={'/User-Gallery'}>Gallery</NavLink>
-
-          <NavLink to={'/about-us-screen'}>About us</NavLink>
-
-          <NavLink to={'/about-us'}>About us</NavLink>
-
-          <button onClick={toggleModal}>Contact Us</button>
-          <a href="sketchbox.html" target='_blank'>Create Your Own Art!</a>
-        main
         </ul>
       </div>
 
