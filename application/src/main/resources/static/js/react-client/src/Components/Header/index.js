@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
 import React, { useState } from 'react';
+
 import Modal from "react-modal";
+import { NavLink } from "react-router-dom";
 import style from "./style.module.scss";
 
 const Header = () => {
@@ -41,10 +42,14 @@ const Header = () => {
           </li>
 
           <NavLink to={'/'}>Home</NavLink>
-          <NavLink to={'Nasa-Observatory'}>Nasa Observatory</NavLink>
+          <NavLink to={'/nasa-api'}>Nasa Observatory</NavLink>
           <NavLink to={'Art Museum'}>Art Museum</NavLink>
           <NavLink to={'/User-Gallery'}>Gallery</NavLink>
+
+          <NavLink to={'/about-us-screen'}>About us</NavLink>
+
           <NavLink to={'/about-us'}>About us</NavLink>
+
           <button onClick={toggleModal}>Contact Us</button>
           <a href="sketchbox.html" target='_blank'>Create Your Own Art!</a>
         main
