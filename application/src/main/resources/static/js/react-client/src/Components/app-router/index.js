@@ -4,6 +4,7 @@ import App from '../../Pages/nasa-api/Nasa';
 import HomeScreen from '../../Pages/home-screen';
 import React from 'react';
 import UserGallery from '../../Pages/User-Gallery';
+import AboutUs from '../../Pages/about-us';
 
 const AppRouter = () => {
     return (
@@ -11,6 +12,7 @@ const AppRouter = () => {
             <Route exact path={'/'} component={HomeScreen} />
             <Route exact path={'/User-Gallery'} component={UserGallery} />
             <Route exact path={'/nasa-api'} component={App} />
+            <Route exact path={'/about-us'} component={AboutUs} />
         </Switch>
     );
 }
