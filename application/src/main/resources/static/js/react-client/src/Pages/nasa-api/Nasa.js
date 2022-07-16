@@ -5,15 +5,23 @@ import NasaImages from "./NasaImages.js"
 import style from "./style.module.scss"
 
 const Nasa = () => {
+  var nasaUrl = 'https://images-api.nasa.gov/search?q=';
+  
   const [nasaImages, setImages] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
+  // const [searchTerm, setSearchTerm] = useState('');
+
+  function searchNasa(){
+   var userSearch = nasaUrl + document.getElementById("apiEndPoint").value;
+  //  console.log(userSearch)
+  }
   
   useEffect(()=> {
     const fetchData = async () => {
-        const nasa = await Axios("https://images-api.nasa.gov/search?q={q}");
-        setImages(nasa.data.collection.items);
+      const nasa = await Axios(nasaUrl);
+      setImages(nasa.data.collection.items);
     };
+    
     
     if (nasaImages) {
       setLoading(false);
@@ -23,15 +31,13 @@ const Nasa = () => {
       !nasaImages && fetchData();
     }, 1000);
     return () => clearTimeout(timer);
-  
   }, [nasaImages]);
 
   return (
     <div>
       <h2 className={style.nasaFont}>Nasa Images</h2>
-      <input type="text" placeholder="Search Nasa Database..." onChange={(event) => {setSearchTerm(event.target.value);
-      }}/>
-        <button type="submit">Submit</button>
+      <input type="text" id="apiEndPoint" placeholder="Search Nasa Database..."/>
+        <button type="submit" onClick={searchNasa}>Submit</button>
       <section>
         {loading ? <h3>Loading ...</h3> : <NasaImages images={nasaImages}/>}
       </section>
