@@ -1,8 +1,21 @@
+h1 {
+  text-align: center;
+}
+
 .navList {
-    display: flex;
-    margin:20px;
-    text-decoration: none;
-    
+  margin:20px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+button {
+  background-color: #fff;
 }
 
 .modal {
@@ -34,4 +47,3 @@
     background: transparent;
   }
 }
-
