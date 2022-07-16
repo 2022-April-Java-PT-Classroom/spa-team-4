@@ -17,7 +17,7 @@ const Header = () => {
       <div className={style.header}>
         <h1>JAC Mystery Educator</h1>
         <ul className={style.navList}>
-      basicHeaderCSSBranchAisha
+      
           <li>
             <NavLink to={'/'}><button>Home</button></NavLink>
           </li>
