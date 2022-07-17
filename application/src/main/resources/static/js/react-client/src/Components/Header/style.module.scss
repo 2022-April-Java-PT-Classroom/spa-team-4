@@ -54,31 +54,31 @@ li {
 }
 
 ul li:nth-child(1) {
-  background-image: linear-gradient(transparent, #76d7ea);
+  background-image: linear-gradient(transparent, #76d7ea, transparent);
 }
 
 ul li:nth-child(2) {
-  background-image: linear-gradient(transparent, #a0cad2);
+  background-image: linear-gradient(transparent, #a0cad2, transparent);
 }
 
 ul li:nth-child(3) {
-  background-image: linear-gradient(transparent, #bdbcbb);
+  background-image: linear-gradient(transparent, #bdbcbb, transparent);
 }
 
 ul li:nth-child(4) {
-  background-image: linear-gradient(transparent, #d3aea4);
+  background-image: linear-gradient(transparent, #d3aea4, transparent);
 }
 
 ul li:nth-child(5) {
-  background-image: linear-gradient(transparent, #e4a08d);
+  background-image: linear-gradient(transparent, #e4a08d, transparent);
 }
 
 ul li:nth-child(6) {
-  background-image: linear-gradient(transparent, #f39077);
+  background-image: linear-gradient(transparent, #f39077, transparent);
 }
 
 ul li:nth-child(7) {
-  background-image: linear-gradient(transparent, #ff7e61);
+  background-image: linear-gradient(transparent, #ff7e61, transparent);
 }
 
 button {
@@ -93,8 +93,19 @@ button {
   left: 50%;
   overflow: auto;
   border: 1px solid #000;
-  background-color: #fff;
+  background-image: radial-gradient(#76d7ea, #a0cad2, #bdbcbb, #d3aea4, #e4a08d, #f39077, #ff7e61);
+  font-family: 'Jost', sans-serif;
   text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+  }
+
+  a:hover {
+    color: #fff;
+  }
 }
 
 .overlay {
@@ -103,7 +114,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #aaa;
+  background-color: transparent;
 }
 
 .close {
