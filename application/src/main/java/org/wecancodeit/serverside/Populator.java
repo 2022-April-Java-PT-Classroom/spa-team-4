@@ -17,5 +17,7 @@ public class Populator implements CommandLineRunner {
     public void run(String... args) throws Exception {
         UserArt jasonArt = new UserArt("Jason Mirwald", "title1", "artDesc", "artUrl");
         userArtRepo.save(jasonArt);
+        UserArt test = new UserArt("john ", "title1", "Landscape", "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        userArtRepo.save(test);
     }
 }
