@@ -16,7 +16,9 @@ const Header = () => {
   return (
     <div>
       <div className={style.header}>
-        <h1>JAC Mystery Educator</h1>
+        <h1>
+          <span className={style.jac}>JAC</span> Mystery Educator
+        </h1>
         <ul className={style.navList}>
       
           <li>
@@ -46,7 +48,7 @@ const Header = () => {
           <li>
             <NavLink to={'About-us'}><button>
             <img src="images/aboutus.png" />
-              About us
+              About Us
               </button></NavLink>
           </li>
           <li>
