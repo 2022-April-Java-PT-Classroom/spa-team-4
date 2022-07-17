@@ -20,25 +20,46 @@ const Header = () => {
         <ul className={style.navList}>
       
           <li>
-            <NavLink to={'/'}><button>Home</button></NavLink>
+            <NavLink to={'/'}><button>
+            <img src="images/home.png" />
+              Home
+              </button></NavLink>
           </li>
           <li>
-            <NavLink to={'Nasa-Observatory'}><button>Nasa Observatory</button></NavLink>
+            <NavLink to={'Nasa-Observatory'}><button>
+              <img src="images/nasa.png" />
+              Nasa Observatory
+            </button></NavLink>
           </li>
           <li>
-            <NavLink to={'Art Museum'}><button>Art Museum</button></NavLink>
+            <NavLink to={'Art Museum'}><button>
+              <img src="images/art.png" />
+              Art Museum
+              </button></NavLink>
           </li>
           <li>
-            <NavLink to={'/User-Gallery'}><button>User Art Gallery</button></NavLink>
+            <NavLink to={'/User-Gallery'}><button>
+            <img src="images/userart.png" />
+              User Art Gallery
+              </button></NavLink>
           </li>
           <li>
-            <NavLink to={'About-us'}><button>About us</button></NavLink>
+            <NavLink to={'About-us'}><button>
+            <img src="images/aboutus.png" />
+              About us
+              </button></NavLink>
           </li>
           <li>
-            <button onClick={toggleModal}>Contact Us</button>
+            <button onClick={toggleModal}>
+              <img src="images/contact.png" />
+              Contact Us
+            </button>
           </li>
           <li>
-            <a href="sketchbox.html" target='_blank'><button>Create Your Own Art!</button></a>
+            <a href="sketchbox.html" target='_blank'><button>
+            <img src="images/createart.png" />
+              Create Your Own Art!
+              </button></a>
           </li>
         </ul>
       </div>
