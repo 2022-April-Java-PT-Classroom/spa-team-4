@@ -17,7 +17,9 @@ const Header = () => {
     <div>
       <div className={style.header}>
         <h1>
-          <span className={style.jac}>JAC</span> Mystery Educator
+          <span className={style.bigger}>JAC</span>
+          <span className={style.bigger}> M</span>ystery
+          <span className={style.bigger}> E</span>ducator
         </h1>
         <ul className={style.navList}>
       

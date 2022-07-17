@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Jost&family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Jost&display=swap');
 
 h1 {
-  font-family: 'Splash', cursive;
+  font-family: 'Cormorant SC', serif;
   font-size: 50px;
   text-align: center;
   text-shadow: 1px 1px #d3aea4;
 
-  .jac {
-    font-family: 'Jost', sans-serif;
-    font-size: 60px;
+  .bigger {
+    font-family: 'Cormorant SC', serif;
+    font-size: 70px;
   }
 }
 
@@ -29,16 +29,44 @@ li {
   }
 
   button {
-    font-family: 'Cormorant SC', serif;
-    text-shadow: 1px 1px #d3aea4;
+    font-family: 'Jost', sans-serif;
     font-size: 25px;
     padding-bottom: 10px;
     border: none;
+    background-color: transparent;
   }
 
   button:hover {
-    text-shadow: 1px 1px #a0cad2;
+    text-shadow: 2px 2px #fff;
   }
+}
+
+ul li:nth-child(1) {
+  background-image: linear-gradient(transparent, #76d7ea);
+}
+
+ul li:nth-child(2) {
+  background-image: linear-gradient(transparent, #a0cad2);
+}
+
+ul li:nth-child(3) {
+  background-image: linear-gradient(transparent, #bdbcbb);
+}
+
+ul li:nth-child(4) {
+  background-image: linear-gradient(transparent, #d3aea4);
+}
+
+ul li:nth-child(5) {
+  background-image: linear-gradient(transparent, #e4a08d);
+}
+
+ul li:nth-child(6) {
+  background-image: linear-gradient(transparent, #f39077);
+}
+
+ul li:nth-child(7) {
+  background-image: linear-gradient(transparent, #ff7e61);
 }
 
 button {
