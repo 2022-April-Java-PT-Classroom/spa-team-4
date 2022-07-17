@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from "react";
 
-import Axios from "axios"
 import NasaImages from "./NasaImages.js"
+import axios from "axios";
 import style from "./style.module.scss"
 
+// import Axios from "axios"
+
+
+
+
 const Nasa = () => {
-  var nasaUrl = 'https://images-api.nasa.gov/search?q=';
+  function nasaApiSearch(){
+    var nasaUrl = 'https://images-api.nasa.gov/search?q=' + document.getElementById('nasaSearch').value;
+    console.log(nasaUrl)
+    return nasaUrl
+  }
   
   const [nasaImages, setImages] = useState(null);
   const [loading, setLoading] = useState(true);
-  // const [searchTerm, setSearchTerm] = useState('');
-
-  function searchNasa(){
-   var userSearch = nasaUrl + document.getElementById("apiEndPoint").value;
-  //  console.log(userSearch)
-  }
   
   useEffect(()=> {
     const fetchData = async () => {
-      const nasa = await Axios(nasaUrl);
+      
+      const nasa = await axios.get(nasaApiSearch());
       setImages(nasa.data.collection.items);
     };
     
@@ -26,18 +30,19 @@ const Nasa = () => {
     if (nasaImages) {
       setLoading(false);
     }
-
+    
     const timer = setTimeout(() => {
       !nasaImages && fetchData();
     }, 1000);
     return () => clearTimeout(timer);
   }, [nasaImages]);
+  
 
   return (
     <div>
       <h2 className={style.nasaFont}>Nasa Images</h2>
-      <input type="text" id="apiEndPoint" placeholder="Search Nasa Database..."/>
-        <button type="submit" onClick={searchNasa}>Submit</button>
+      <input type="text" id="nasaSearch" placeholder="Search Nasa Database..."/>
+        <button value="Submit" onClick={nasaApiSearch}>Browse the Stars</button>
       <section>
         {loading ? <h3>Loading ...</h3> : <NasaImages images={nasaImages}/>}
       </section>
