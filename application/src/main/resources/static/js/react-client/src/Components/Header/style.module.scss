@@ -43,10 +43,13 @@ li {
     padding-bottom: 10px;
     border: none;
     background-color: transparent;
+    transition: .5s;
   }
 
   button:hover {
-    text-shadow: 2px 2px #fff;
+    background-color: #fff;
+    font-size: 30px;
+    cursor: pointer;
   }
 }
 
