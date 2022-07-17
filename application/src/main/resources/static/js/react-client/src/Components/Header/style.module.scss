@@ -7,13 +7,16 @@
 
 .header {
   background-color: #fff;
+  background-image: radial-gradient(ellipse at top, #f1f1f1, transparent);
 }
 
 h1 {
   font-family: 'Cormorant SC', serif;
   font-size: 50px;
   text-align: center;
-  text-shadow: 1px 1px #d3aea4;
+  text-shadow: 1px 1px #aaa;
+  padding-top: 0;
+  margin-top: 0;
 
   .bigger {
     font-family: 'Cormorant SC', serif;
@@ -40,6 +43,7 @@ li {
   button {
     font-family: 'Jost', sans-serif;
     font-size: 25px;
+    text-shadow: 1px 1px #fff;
     padding-bottom: 10px;
     border: none;
     background-color: transparent;
@@ -47,38 +51,66 @@ li {
   }
 
   button:hover {
-    background-color: #fff;
     font-size: 30px;
+    text-shadow: none;
     cursor: pointer;
   }
 }
 
 ul li:nth-child(1) {
-  background-image: linear-gradient(transparent, #76d7ea, transparent);
+  background-image: linear-gradient(transparent 33.3%, #76d7ea 33.3%, #76d7ea 66.6%, transparent 66.6%);
+
+  button:hover {
+    background-color: #76d7ea;
+  }
 }
 
 ul li:nth-child(2) {
-  background-image: linear-gradient(transparent, #a0cad2, transparent);
+  background-image: linear-gradient(transparent 33.3%, #a0cad2 33.3%, #a0cad2 66.6%,transparent 66.6%);
+
+  button:hover {
+    background-color: #a0cad2;
+  }
 }
 
 ul li:nth-child(3) {
-  background-image: linear-gradient(transparent, #bdbcbb, transparent);
+  background-image: linear-gradient(transparent 33.3%, #bdbcbb 33.3%, #bdbcbb 66.6%, transparent 66.6%);
+
+  button:hover {
+    background-color: #bdbcbb;
+  }
 }
 
 ul li:nth-child(4) {
-  background-image: linear-gradient(transparent, #d3aea4, transparent);
+  background-image: linear-gradient(transparent 33.3%, #d3aea4 33.3%, #d3aea4 66.6%, transparent 66.6%);
+
+  button:hover {
+    background-color: #d3aea4;
+  }
 }
 
 ul li:nth-child(5) {
-  background-image: linear-gradient(transparent, #e4a08d, transparent);
+  background-image: linear-gradient(transparent 33.3%, #e4a08d 33.3%, #e4a08d 66.6%, transparent 66.6%);
+
+  button:hover {
+    background-color: #e4a08d;
+  }
 }
 
 ul li:nth-child(6) {
-  background-image: linear-gradient(transparent, #f39077, transparent);
+  background-image: linear-gradient(transparent 33.3%, #f39077 33.3%, #f39077 66.6%, transparent 66.6%);
+
+  button:hover {
+    background-color: #f39077;
+  }
 }
 
 ul li:nth-child(7) {
-  background-image: linear-gradient(transparent, #ff7e61, transparent);
+  background-image: linear-gradient(transparent 33.3%, #ff7e61 33.3%, #ff7e61 66.6%, transparent 66.6%);
+
+  button:hover {
+    background-color: #ff7e61;
+  }
 }
 
 button {

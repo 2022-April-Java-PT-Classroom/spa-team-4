@@ -36,13 +36,13 @@ const Header = () => {
             </button></NavLink>
           </li>
           <li>
-            <NavLink to={'Art Museum'}><button>
+            <NavLink to={'Art-Museum'}><button>
               <img src="images/art.png" />
               Art Museum
               </button></NavLink>
           </li>
           <li>
-            <NavLink to={'/User-Gallery'}><button>
+            <NavLink to={'User-Gallery'}><button>
             <img src="images/userart.png" />
               User Art Gallery
               </button></NavLink>
