@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Jost&display=swap');
 
+.stick {
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  background-color: #fff;
+}
+
 h1 {
   font-family: 'Cormorant SC', serif;
   font-size: 50px;

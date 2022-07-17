@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <div>
+    <div className={style.stick}>
       <div className={style.header}>
         <h1>
           <span className={style.bigger}>JAC</span>
