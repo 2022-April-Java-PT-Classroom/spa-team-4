@@ -4,7 +4,7 @@ import style from "./style.module.scss"
 const UserGallery = () =>{
     return(
         <div className={style.UserGallery}>
-            <h1>Welcome To The User Submitted Gallery</h1>
+            <h2>Welcome To The User Submitted Gallery</h2>
         </div>
     );
 }
