@@ -36,7 +36,7 @@ const Header = () => {
             </button></NavLink>
           </li>
           <li>
-            <NavLink to={'Art-Museum'}><button>
+            <NavLink to={'/Museum-api'}><button>
               <img src="images/art.png" />
               Art Museum
               </button></NavLink>
