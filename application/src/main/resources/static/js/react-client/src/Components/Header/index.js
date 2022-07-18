@@ -14,31 +14,60 @@ const Header = () => {
   }
 
   return (
-    <div>
+    <div className={style.stick}>
       <div className={style.header}>
-        <h1>JAC Mystery Educator</h1>
+        <h1>
+          <span className={style.bigger}>JAC</span>
+          <span className={style.bigger}> M</span>ystery
+          <span className={style.bigger}> E</span>ducator
+        </h1>
         <ul className={style.navList}>
       
           <li>
-            <NavLink to={'/'}><button>Home</button></NavLink>
+            <NavLink to={'/'}><button>
+            <img src="images/home.png" />
+              Home
+              </button></NavLink>
           </li>
           <li>
+
             <NavLink to={'/nasa-api'}><button>Nasa Observatory</button></NavLink>
+
+            <NavLink to={'Nasa-Observatory'}><button>
+              <img src="images/nasa.png" />
+              Nasa Observatory
+            </button></NavLink>
+
           </li>
           <li>
-            <NavLink to={'Art Museum'}><button>Art Museum</button></NavLink>
+            <NavLink to={'/Museum-api'}><button>
+              <img src="images/art.png" />
+              Art Museum
+              </button></NavLink>
           </li>
           <li>
-            <NavLink to={'/User-Gallery'}><button>Gallery</button></NavLink>
+            <NavLink to={'User-Gallery'}><button>
+            <img src="images/userart.png" />
+              User Art Gallery
+              </button></NavLink>
           </li>
           <li>
-            <NavLink to={'About-us'}><button>About us</button></NavLink>
+            <NavLink to={'About-us'}><button>
+            <img src="images/aboutus.png" />
+              About Us
+              </button></NavLink>
           </li>
           <li>
-            <button onClick={toggleModal}>Contact Us</button>
+            <button onClick={toggleModal}>
+              <img src="images/contact.png" />
+              Contact Us
+            </button>
           </li>
           <li>
-            <a href="sketchbox.html" target='_blank'><button>Create Your Own Art!</button></a>
+            <a href="sketchbox.html" target='_blank'><button>
+            <img src="images/createart.png" />
+              Create Your Own Art!
+              </button></a>
           </li>
         </ul>
       </div>
