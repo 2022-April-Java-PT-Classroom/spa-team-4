@@ -13,20 +13,97 @@ div {
   display: grid;
   width: 500px;
   height: 500px;
-  border: 10px ridge #76d7ea;
+  border: 10px dashed #76d7ea;
   grid-template: repeat(25, 1fr) / repeat(25, 1fr);
   margin: auto;
 }
 
-h1, .colors, .reset, .instructions {
+h1, .colors, .reset, .art-instructions, .save-instructions {
   text-align: center;
 }
 
-button, .instructions {
+button, .art-instructions, .save-instructions {
   font-family: 'jost', sans-serif;
 }
 
 h1 {
   font-family: 'caveat', cursive;
-  font-size: 48px;
+  font-size: 60px;
+  text-shadow: 2px 2px #76d7ea;
+}
+
+h3 {
+  font-size: 30px;
+  text-shadow: 2px 2px #76d7ea;
+}
+
+.art-instructions, .save-instructions {
+  font-size: 20px;
+}
+
+.art-instructions {
+  float: left;
+}
+
+.save-instructions {
+  float: right;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 38px;
+  margin: 10px;
+  transition: .5s;
+}
+
+button:hover {
+  cursor: pointer;
+  font-size: 45px;
+}
+
+#reset {
+  border: 5px dashed #76d7ea;
+  background-color: #fff;
+  font-size: 25px;
+}
+
+#red {
+  color: red;
+}
+
+#orange {
+  color: orange;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#green {
+  color: green;
+}
+
+#blue {
+  color: blue;
+}
+
+#purple {
+  color: purple;
+}
+
+#black {
+  color: black;
+}
+
+#white {
+  color: white;
+}
+
+#brown {
+  color: brown;
+}
+
+#gray {
+  color: gray;
 }
