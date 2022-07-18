@@ -38,7 +38,7 @@ const AboutUs = () => {
                 erat volutpat. Aliquam sagittis pretium sodales. Orci varius natoque penatibus et magnis dis 
                 parturient montes, nascetur ridiculus mus. In tempor hendrerit elementum.</p> 
 
-            <h3>Team Member D</h3>
+            <h3>Jason Mirwald</h3>
             //inserting professional headshot 
             <a href="https://github.com/jjmirwaldjr">GitHub</a>
             <a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/">LinkedIn</a>
@@ -49,7 +49,7 @@ const AboutUs = () => {
                 erat volutpat. Aliquam sagittis pretium sodales. Orci varius natoque penatibus et magnis dis 
                 parturient montes, nascetur ridiculus mus. In tempor hendrerit elementum.</p> 
 
-            <h3>Team Member E</h3>
+            <h3>Louis Tchamba</h3>
             //inserting professional headshot
             <a href="https://github.com/louis2tch">GitHub</a>
             <a href="https://www.linkedin.com/in/louis-tchamda-9589bb74/">LinkedIn</a>
@@ -60,7 +60,7 @@ const AboutUs = () => {
                 erat volutpat. Aliquam sagittis pretium sodales. Orci varius natoque penatibus et magnis dis 
                 parturient montes, nascetur ridiculus mus. In tempor hendrerit elementum.</p>  
 
-            <h3>Team Member F</h3>
+            <h3>Victor Negron</h3>
             //inserting professional headshot
             <a href="https://github.com/VictorLNegron">GitHub</a>
             <a href="https://www.linkedin.com/in/victor-negron-742558235/">LinkedIn</a>
@@ -71,7 +71,7 @@ const AboutUs = () => {
                 erat volutpat. Aliquam sagittis pretium sodales. Orci varius natoque penatibus et magnis dis 
                 parturient montes, nascetur ridiculus mus. In tempor hendrerit elementum.</p>
 
-            <h3>Team Member G</h3>
+            <h3>Zaylet Feliciano</h3>
             //inserting professional headshot
             <a href="https://github.com/zaylet">GitHub</a>
             <a href="https://www.linkedin.com/in/zayletfeliciano/">LinkedIn</a>

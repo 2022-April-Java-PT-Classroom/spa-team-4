@@ -3,33 +3,38 @@ import Axios from 'axios';
 import style from './style.module.scss';
 
 const Museum = () => {
-    const [artMuseum, setImages] = useState(null);
+    const [artWork, setArtWork] = useState(null);
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
 
         const fetchData = async () => {
-            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/[437133]");
+            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/40");
 
-            setImages(museumArt.data.collection.items);
+            setArtWork(museumArt.data);
             
         };
 
-        if (artMuseum) {
+        if (artWork) {
             setLoading(false);
         }
 
         const timer = setTimeout(() =>{
-            !artMuseum && fetchData();
+            !artWork && fetchData();
         }, 1000);
         return () => clearTimeout(timer);
-    }, [artMuseum]);
+    }, [artWork]);
 
     return (
+        loading ? <h3>Loading Art...</h3> :
         <div>
             <h2>The Metropolitan Museum of Art</h2>
             <section>
-                {loading ? <h3>Loading Art...</h3> : <artMuseum images={artMuseum}/>}
+                <p>{artWork.department}</p>
+                <p>{artWork.title}</p>
+                <p>{artWork.artistDisplayName}</p>
+                <p>{artWork.objectDate}</p>
+                <img src={artWork.primaryImage}></img>
             </section>
         </div>
     );
