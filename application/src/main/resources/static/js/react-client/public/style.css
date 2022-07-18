@@ -30,16 +30,20 @@ h1 {
   font-family: 'caveat', cursive;
   font-size: 60px;
   text-shadow: 2px 2px #76d7ea;
-  margin: 0;
+  margin: 5px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: 2px 2px #76d7ea;
 }
 
+.colors {
+  margin-bottom: 10px;
+}
+
 .art-instructions, .save-instructions {
-  font-size: 20px;
+  font-size: 16px;
   max-width: 800px;
 }
 
