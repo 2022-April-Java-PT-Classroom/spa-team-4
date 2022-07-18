@@ -30,9 +30,6 @@ const Header = () => {
               </button></NavLink>
           </li>
           <li>
-
-            <NavLink to={'/nasa-api'}><button>Nasa Observatory</button></NavLink>
-
             <NavLink to={'Nasa-Observatory'}><button>
               <img src="images/nasa.png" />
               Nasa Observatory
