@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Jost&display=swap');
+
+body {
+  background-image: linear-gradient(#ff7e61 33.3%, #76d7ea 33.3%, #76d7ea 66.6%, #ff7e61 66.6%);
+}
+
 div {
   width: auto;
   height: auto;
@@ -7,11 +13,20 @@ div {
   display: grid;
   width: 500px;
   height: 500px;
-  border: 1px solid #000;
+  border: 10px ridge #76d7ea;
   grid-template: repeat(25, 1fr) / repeat(25, 1fr);
   margin: auto;
 }
 
-h1, .colors, .reset {
+h1, .colors, .reset, .instructions {
   text-align: center;
+}
+
+button, .instructions {
+  font-family: 'jost', sans-serif;
+}
+
+h1 {
+  font-family: 'caveat', cursive;
+  font-size: 48px;
 }
