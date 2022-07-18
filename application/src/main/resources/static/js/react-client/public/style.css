@@ -13,7 +13,7 @@ div {
   display: grid;
   width: 500px;
   height: 500px;
-  border: 10px dashed #76d7ea;
+  outline: 10px dashed #76d7ea;
   grid-template: repeat(25, 1fr) / repeat(25, 1fr);
   margin: auto;
 }
@@ -30,6 +30,7 @@ h1 {
   font-family: 'caveat', cursive;
   font-size: 60px;
   text-shadow: 2px 2px #76d7ea;
+  margin: 0;
 }
 
 h3 {
@@ -39,6 +40,7 @@ h3 {
 
 .art-instructions, .save-instructions {
   font-size: 20px;
+  max-width: 800px;
 }
 
 .art-instructions {
@@ -52,20 +54,30 @@ h3 {
 button {
   border: none;
   background-color: transparent;
-  font-size: 38px;
+  text-shadow: 1px 1px #000;
+  font-size: 50px;
   margin: 10px;
   transition: .5s;
 }
 
 button:hover {
   cursor: pointer;
-  font-size: 45px;
+  font-size: 55px;
+}
+
+.reset {
+  margin-top: 10px;
 }
 
 #reset {
   border: 5px dashed #76d7ea;
-  background-color: #fff;
+  background-color: transparent;
   font-size: 25px;
+  transform: .5s;
+}
+
+#reset:hover {
+  background-color: #fff;
 }
 
 #red {
