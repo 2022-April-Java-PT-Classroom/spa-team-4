@@ -1,11 +1,5 @@
 import React,{useEffect, useState} from "react";
 
-
-const UserGallery = () =>{
-    return(
-        <div className={style.UserGallery}>
-            <h2>Welcome To The User Submitted Gallery</h2>
-
 import Axios from "axios";
 import style from './style.module.scss';
 
