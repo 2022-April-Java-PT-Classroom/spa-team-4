@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Jost&display=swap');
+
 .footer {
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(to right, #76d7ea, #ff7e61);
+  font-family: 'jost', sans-serif;
 }
+
+small {
+  
+  button {
+    background-color: transparent;
+    font-family: 'jost', sans-serif;
+    border: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  button:hover, a:hover {
+    cursor: pointer;
+  }
+}
+
