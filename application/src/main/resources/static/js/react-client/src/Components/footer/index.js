@@ -9,8 +9,8 @@ const Footer = () =>{
     return(
         <div className={style.footer}>
           <small>
-          <span id="top" onClick={scrollToTop}>Return to Top of the Page </span>| 
-            &copy; JAC Enterprises 2022
+          <button onClick={scrollToTop}>Return to Top of the Page </button>| 
+            &copy; <a href="jac/index.html" target="_blank">JAC Enterprises 2022</a>
           </small>
         </div>
     );
