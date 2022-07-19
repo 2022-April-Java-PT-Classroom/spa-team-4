@@ -2,9 +2,16 @@ import React from "react";
 import style from "./style.module.scss"
 
 const Footer = () =>{
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
     return(
         <div className={style.footer}>
-            <small> &copy; JAC 2022</small>
+          <small>
+          <span id="top" onClick={scrollToTop}>Return to Top of the Page </span>| 
+            &copy; JAC Enterprises 2022
+          </small>
         </div>
     );
 }
