@@ -29,10 +29,12 @@ const Nasa = () => {
   return (
     <div>
       <h2 className={style.nasaFont}>Nasa Images</h2>
-      <form onSubmit={submitHandler}>
-        <input type="text" onChange={searchTextChangeHandler} placeholder="Search Nasa Database..." />
-        <button type="submit">Submit</button>
-      </form>
+      <div className={style.boxAlign}>
+        <form onSubmit={submitHandler}>
+          <input type="text" onChange={searchTextChangeHandler} placeholder="Search Nasa Database..." />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
       <div className={style.imageCentering}>
         <section className={style.grid}>
           <NasaImages images={nasaImages} />
