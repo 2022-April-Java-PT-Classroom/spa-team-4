@@ -5,9 +5,37 @@
 
 .nasaFont{
     font-family: stars;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    max-width: 95%;
+    max-height: 6.6in;
+    row-gap: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 51%, rgba(255,79,0,1) 100%);
+    padding: 10px;
+    overflow-y: auto;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 9in;
+        height: 450px;
+    }
+}
+
+.boxAlign{
+    text-align: center;
+    margin: 5px;
 }
 
 p {
     display: flex;
     justify-content: center;
 }
+
+
