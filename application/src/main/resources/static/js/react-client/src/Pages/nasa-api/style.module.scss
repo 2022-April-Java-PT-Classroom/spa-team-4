@@ -11,3 +11,17 @@ p {
     display: flex;
     justify-content: center;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    max-width: 90%;
+    max-height: 6.6in;
+    row-gap: 10px;
+    background-color: #3b3c49;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+

@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./style.module.scss"
 
 const NasaImages = ({ images}) => {
  
@@ -6,9 +7,8 @@ const NasaImages = ({ images}) => {
 
     
     return (
-      <div key={index}>
+      <div className={style.images} key={index}>
         <img src={image.links && image.links[0].href} alt="" />
-        <p></p>
       </div>
     );
   });

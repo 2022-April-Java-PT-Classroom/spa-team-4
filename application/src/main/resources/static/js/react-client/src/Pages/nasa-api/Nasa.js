@@ -33,9 +33,11 @@ const Nasa = () => {
         <input type="text" onChange={searchTextChangeHandler} placeholder="Search Nasa Database..." />
         <button type="submit">Submit</button>
       </form>
-      <section>
-        <NasaImages images={nasaImages} />
-      </section>
+      <div className={style.imageCentering}>
+        <section className={style.grid}>
+          <NasaImages images={nasaImages} />
+        </section>
+      </div>
     </div>
   );
 }
