@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import style from './style.module.scss';
-import noImage from '../../assets/images/no-image.jpg';
+import noImage from '../../assets/images/noimages.jpg';
 
 
 
