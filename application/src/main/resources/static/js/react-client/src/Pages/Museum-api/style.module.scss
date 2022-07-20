@@ -1,0 +1,14 @@
+.metroHeader {
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: art;
+    src: url("../../Components/fonts/RotheDemoRegular-vLvZ.ttf");
+}
+
+.metroHeader {
+    font-family: art;
+    font-size: 250%;
+}

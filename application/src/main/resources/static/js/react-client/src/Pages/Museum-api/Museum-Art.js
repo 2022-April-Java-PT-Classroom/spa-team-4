@@ -28,13 +28,14 @@ const Museum = () => {
     return (
         loading ? <h3>Loading Art...</h3> :
         <div>
-            <h2>The Metropolitan Museum of Art</h2>
-            <section>
+            <h2 className={style.metroHeader}>The Metropolitan Museum of Art</h2>
+            <section className={style.art}>
                 <p>{artWork.department}</p>
                 <p>{artWork.title}</p>
                 <p>{artWork.artistDisplayName}</p>
                 <p>{artWork.objectDate}</p>
-                <img src={artWork.primaryImage}></img>
+                <p>{artWork.repository}</p>
+                <img className={style.artImg} src={artWork.primaryImage} height="700" width="700"></img>
             </section>
         </div>
     );
