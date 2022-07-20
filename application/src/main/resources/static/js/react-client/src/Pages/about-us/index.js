@@ -62,12 +62,10 @@ const AboutUs = () => {
             //inserting professional headshot
             <a href="https://github.com/VictorLNegron">GitHub</a>
             <a href="https://www.linkedin.com/in/victor-negron-742558235/">LinkedIn</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan lacus in eros egestas, 
-                sit amet auctor odio egestas. Maecenas eu sollicitudin est. Pellentesque ornare nulla a ipsum 
-                accumsan tempor. Nulla facilisi. Etiam blandit, erat eget laoreet aliquet, nulla diam interdum 
-                nunc, non finibus metus sem gravida enim. Integer imperdiet imperdiet mauris ac dictum. Aliquam 
-                erat volutpat. Aliquam sagittis pretium sodales. Orci varius natoque penatibus et magnis dis 
-                parturient montes, nascetur ridiculus mus. In tempor hendrerit elementum.</p>
+            <p>Hey im Victor, Born in Cleveland, Ohio, I've always wanted to take the leap towards a career in technol
+            -ogy but kept my plans on hold as life got in the way. But in the mean time, I decided to learn to code on
+            my own as I always felt drawn to it. After I get my Certificate in Software Development, I will finally be
+            able to put it to use and realize my dream of transitioning into a career in tech!</p>
 
             <h3>Zaylet Feliciano</h3>
             //inserting professional headshot
