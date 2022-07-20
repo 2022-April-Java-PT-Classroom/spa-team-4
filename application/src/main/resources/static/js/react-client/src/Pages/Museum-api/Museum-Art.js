@@ -5,6 +5,7 @@ import style from './style.module.scss';
 const Museum = () => {
     const [artWork, setArtWork] = useState(null);
     const [artWorkNumTwo, setArtWorkNumTwo] = useState(null);
+    const [artWorkNumThree, setArtWorkNumThree] = useState(null);
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
@@ -28,7 +29,7 @@ const Museum = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/40");
+            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/527");
 
             setArtWorkNumTwo(museumArt.data);
         };
@@ -42,6 +43,23 @@ const Museum = () => {
         }, 1000);
         return () => clearTimeout(timer);
     }, [artWorkNumTwo]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/40");
+
+            setArtWorkNumThree(museumArt.data);
+        };
+
+        if (artWorkNumThree) {
+            setLoading(false);
+        }
+
+        const timer = setTimeout(() =>{
+            !artWorkNumThree && fetchData();
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [artWorkNumThree]);
     
 
     return (
@@ -56,6 +74,22 @@ const Museum = () => {
                 <p>{artWork.repository}</p>
                 <div className={style.artImg}>
                 <img src={artWork.primaryImage} height="500" width="500"></img>
+                </div>
+                <p>{artWorkNumTwo.department}</p>
+                <p>{artWorkNumTwo.title}</p>
+                <p>{artWorkNumTwo.artistDisplayName}</p>
+                <p>{artWorkNumTwo.objectDate}</p>
+                <p>{artWorkNumTwo.repository}</p>
+                <div className={style.artImg}>
+                <img src={artWorkNumTwo.primaryImage} height="500" width="500"></img>
+                </div>
+                <p>{artWorkNumThree.department}</p>
+                <p>{artWorkNumThree.title}</p>
+                <p>{artWorkNumThree.artistDisplayName}</p>
+                <p>{artWorkNumThree.objectDate}</p>
+                <p>{artWorkNumThree.repository}</p>
+                <div className={style.artImg}>
+                <img src={artWorkNumThree.primaryImage} height="500" width="500"></img>
                 </div>
             </section>
         </div>
