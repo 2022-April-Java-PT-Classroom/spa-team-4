@@ -53,12 +53,12 @@ const HomeScreen = () => {
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
-
-        var museumIndex = Math.floor(Math.random() * 700001);
+        var museum = [7000, 400000, 450000, 460000, 4500, 4501, 12000]
+        var museumIndex = Math.floor(Math.random() * (museum.length));
     
 
         const fetchData = async () => {
-            const museumArt = await Axios(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${museumIndex}`);
+            const museumArt = await Axios(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${museum[museumIndex]}`);
 
             setArtWork(museumArt.data);
             
@@ -78,11 +78,12 @@ const HomeScreen = () => {
     const [loadingUserArt, setLoadingUserArt] = useState(true),
     [gallery, setGallery] = useState(null);
 
-    var galleryIndex = Math.floor(Math.random() * 1);
+    var galleryIndex = Math.floor(Math.random() * 2);
 
     useEffect(() => {
         const fetchData = async () => {
             const result = await Axios('http://localhost:8080/gallery');
+
             setGallery(result.data[galleryIndex]);
         }
 
@@ -104,45 +105,56 @@ const HomeScreen = () => {
             <div className={style.container}>
                 <div className = {style.item}>
                     <div style = {{width:"300px"}}>
+                        { loadingnasaImage ? <h3>Loading ...</h3> :
                         <div className={style.picCtn}>
                             {nasaImage.map(nasaImg => (
                                 <div className={style.pic}>
                                     <a href="/nasa-api" key={nasaImg.id}>
                                         <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                                            <tr style={{background:'#000'}}>
+                                                <td height='275' className={style.img} style={{background:`url(${nasaImg.image})no-repeat`, backgroundSize: '300px', backgroundPosition:'middle' }}></td>
+                                            </tr>
                                             <tr>
-                                                <td height='275' className={style.img}><img src={nasaImg.image} alt='' title={nasaImg.title} className={style.image} /></td>
                                                 <td><p className={style.title}>{nasaImg.title}</p></td>
                                             </tr>
                                         </table>
                                     </a>
-                             </div>   
-                                
+                             </div> 
                             ))}
                         </div>
+                        }
                     </div>
                      
                 </div>
 
                 <div className = {style.item}>
+                    {loading ? <h3>Loading ...</h3> :
                     <a href="/Museum-api">
                         <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                            <tr style={{background:'#000'}}>
+                                <td height='275' className={style.img} style={{background:`url(${artWork.primaryImage!=="" ? artWork.primaryImage :noImage})no-repeat 0 -30px`, backgroundSize: '320px', backgroundPosition:'top' }}></td>
+                            </tr>
                             <tr>
-                                <td height='275' className={style.img}><img src={artWork.primaryImage!="" ? artWork.primaryImage :noImage} className={style.image} /></td>
                                 <td><p className={style.title}>{artWork.title}</p></td>
                             </tr>
                         </table>
                     </a>
+                    }
                 </div>
 
                 <div className = {style.item}>
-                    <a href="/Museum-api">
-                    <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                    {loadingUserArt ?  <h3>Loading ...</h3> :
+                    <a href="/User-Gallery">
+                        <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                            <tr style={{background:'#000'}}>
+                                <td height='275' className={style.img} style={{background:`url(${gallery.artUrl!=="" ? gallery.artUrl :noImage})no-repeat 0 -30px`, backgroundSize: '320px', backgroundPosition:'center' }}></td>
+                            </tr>
                             <tr>
-                                <td height='275' className={style.img}><img src={gallery.artUrl!="" ? gallery.artUrl :noImage} className={style.image} /></td>
-                                <td><p className={style.title}>{gallery.artDesc}</p></td>
+                                 <td><p className={style.title}>{gallery.artDesc}</p></td>
                             </tr>
                         </table>  
                     </a>
+                    }
                 </div>
             </div>
         </div>

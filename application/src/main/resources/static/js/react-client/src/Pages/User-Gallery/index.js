@@ -24,12 +24,24 @@ const UserArt = ({userArt}) => {
 
     }, [gallery]);
 
+
+    
     const [userArtState, setUserArtState] = useState({
         artistName: "",
         artTitle: "",
         artDesc: "",
         artUrl: ""
     });
+
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setUserArtState({
+            ...userArtState,
+            [e.target.name]: value
+        });
+    };
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -40,6 +52,7 @@ const UserArt = ({userArt}) => {
             artUrl: userArtState.artUrl
         };
 
+        
         Axios.post('http://localhost:8080/api/gallery/add-art', artistData).then((response) => {
             console.log(response.status);
             console.log('DATA', response.data);
@@ -54,10 +67,10 @@ const UserArt = ({userArt}) => {
             <div className={style.form__container}>
                 {/* String artistName, String artTitle, String artDesc, String artUrl */}
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="artistName" value={userArtState.artistName}  placeholder='Enter the artist Name' />
-                    <input type="text" name="artTitle" value={userArtState.artTitle}  placeholder='Enter the art Title' />
-                    <textarea name="artDesc" value={userArtState.artDesc}  placeholder='Enter the art Description' />
-                    <input type="text" name="artUrl" value={userArtState.artUrl}  placeholder='Enter the art Url picture' />
+                    <input type="text" name="artistName" value={userArtState.artistName} onChange={handleChange} placeholder='Enter the artist Name' />
+                    <input type="text" name="artTitle" value={userArtState.artTitle} onChange={handleChange} placeholder='Enter the art Title' />
+                    <textarea name="artDesc" value={userArtState.artDesc} onChange={handleChange} placeholder='Enter the art Description' />
+                    <input type="text" name="artUrl" value={userArtState.artUrl} onChange={handleChange} placeholder='Enter the art Url picture' />
                     <button type="submit">Add item in Gallery</button>
                 </form>
 
