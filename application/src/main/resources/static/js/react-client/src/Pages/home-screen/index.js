@@ -78,7 +78,7 @@ const HomeScreen = () => {
     const [loadingUserArt, setLoadingUserArt] = useState(true),
     [gallery, setGallery] = useState(null);
 
-    var galleryIndex = Math.floor(Math.random() * 2);
+    var galleryIndex = Math.floor(Math.random() * 1);
 
     useEffect(() => {
         const fetchData = async () => {
