@@ -4,12 +4,13 @@ import style from './style.module.scss';
 
 const Museum = () => {
     const [artWork, setArtWork] = useState(null);
+    const [artWorkNumTwo, setArtWorkNumTwo] = useState(null);
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
 
         const fetchData = async () => {
-            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/40");
+            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/500");
 
             setArtWork(museumArt.data);
             
@@ -25,9 +26,27 @@ const Museum = () => {
         return () => clearTimeout(timer);
     }, [artWork]);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            const museumArt = await Axios("https://collectionapi.metmuseum.org/public/collection/v1/objects/40");
+
+            setArtWorkNumTwo(museumArt.data);
+        };
+
+        if (artWorkNumTwo) {
+            setLoading(false);
+        }
+
+        const timer = setTimeout(() =>{
+            !artWorkNumTwo && fetchData();
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [artWorkNumTwo]);
+    
+
     return (
         loading ? <h3>Loading Art...</h3> :
-        <div>
+        <div className={style.singlePage}>
             <h2 className={style.metroHeader}>The Metropolitan Museum of Art</h2>
             <section className={style.art}>
                 <p>{artWork.department}</p>
@@ -35,7 +54,9 @@ const Museum = () => {
                 <p>{artWork.artistDisplayName}</p>
                 <p>{artWork.objectDate}</p>
                 <p>{artWork.repository}</p>
-                <img className={style.artImg} src={artWork.primaryImage} height="700" width="700"></img>
+                <div className={style.artImg}>
+                <img src={artWork.primaryImage} height="500" width="500"></img>
+                </div>
             </section>
         </div>
     );
