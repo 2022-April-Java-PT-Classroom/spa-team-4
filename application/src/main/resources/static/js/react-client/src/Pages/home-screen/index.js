@@ -75,6 +75,29 @@ const HomeScreen = () => {
     }, [artWork]);
 
 
+    const [loadingUserArt, setLoadingUserArt] = useState(true),
+    [gallery, setGallery] = useState(null);
+
+    var galleryIndex = Math.floor(Math.random() * 2);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await Axios('http://localhost:8080/gallery');
+            setGallery(result.data[galleryIndex]);
+        }
+
+        if (gallery) {
+            setLoadingUserArt(false);
+        }
+
+        const timer = setTimeout(() => {
+            !gallery && fetchData(); 
+        }, 1000);
+        return () => clearTimeout(timer);
+
+    }, [gallery]);
+
+
     if(nasaImage!=null)
     return (
         <div className={style.home}>
@@ -83,12 +106,17 @@ const HomeScreen = () => {
                     <div style = {{width:"300px"}}>
                         <div className={style.picCtn}>
                             {nasaImage.map(nasaImg => (
-                                <a href="/nasa-api" key={nasaImg.id}>
-                                    <div className={style.pic}>
-                                        <img src={nasaImg.image} alt="" title={nasaImg.title}/>
-                                        <p className={style.title}>{nasaImg.title}</p>
-                                    </div>
-                                </a>
+                                <div className={style.pic}>
+                                    <a href="/nasa-api" key={nasaImg.id}>
+                                        <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                                            <tr>
+                                                <td height='275' className={style.img}><img src={nasaImg.image} alt='' title={nasaImg.title} className={style.image} /></td>
+                                                <td><p className={style.title}>{nasaImg.title}</p></td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                             </div>   
+                                
                             ))}
                         </div>
                     </div>
@@ -97,15 +125,23 @@ const HomeScreen = () => {
 
                 <div className = {style.item}>
                     <a href="/Museum-api">
-                        <img src={artWork.primaryImage!="" ? artWork.primaryImage :noImage} classNme={style.img}/>
-                        <p className={style.title}>{artWork.title}</p>
+                        <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                            <tr>
+                                <td height='275' className={style.img}><img src={artWork.primaryImage!="" ? artWork.primaryImage :noImage} className={style.image} /></td>
+                                <td><p className={style.title}>{artWork.title}</p></td>
+                            </tr>
+                        </table>
                     </a>
                 </div>
-                                {/* User-Gallery still need to be implemented */}
-                <div className = {style.item}> 
-                    <a href="/User-Gallery">
-                        <img src={artWork.primaryImage!="" ? artWork.primaryImage :noImage} classNme={style.img}/>
-                        <p className={style.title}>{artWork.title}</p>
+
+                <div className = {style.item}>
+                    <a href="/Museum-api">
+                    <table width='100%' height='300' cellPadding='0' cellSpacing='0'>
+                            <tr>
+                                <td height='275' className={style.img}><img src={gallery.artUrl!="" ? gallery.artUrl :noImage} className={style.image} /></td>
+                                <td><p className={style.title}>{gallery.artDesc}</p></td>
+                            </tr>
+                        </table>  
                     </a>
                 </div>
             </div>
