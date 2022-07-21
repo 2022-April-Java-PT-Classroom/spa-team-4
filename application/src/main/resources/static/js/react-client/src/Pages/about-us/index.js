@@ -24,7 +24,7 @@ const AboutUs = () => {
             player, but I also work well on my own. Outside of development I enjoy researching anything that catches
             my attention from music,dance, how the mind works etc.. Most importantly I love spending time with my family!</p>
 
-            <h3>Dane Firestone</h3
+            <h3>Dane Firestone</h3>
            <img src="images/dane.png" height="200" width="200"></img>
             <a href="https://github.com/danefirestone">GitHub</a>
             <a href="https://www.linkedin.com/in/danefirestone/">LinkedIn</a>
