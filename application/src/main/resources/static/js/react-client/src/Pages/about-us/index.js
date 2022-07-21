@@ -7,7 +7,7 @@ const AboutUs = () => {
             <h2>About Us</h2>
             <h3>Aisha Bluem</h3>
             //inserting professional headshot
-            <img src={"Aisha.jfif"} height="200" width="200"></img>
+            <img src={"Aisha.jpg"} height="200" width="200"></img>
             <a href="https://github.com/acbluem">GitHub</a>
             <a href="https://www.linkedin.com/in/aishabluem/">LinkedIn</a>
             <p>Hi! My name is Aisha (phonetic spelling: ay-zhuh).
@@ -53,7 +53,7 @@ const AboutUs = () => {
 
             <h3>Louis Tchamba</h3>
             //inserting professional headshot
-            <img src={"Louis.jfif"} height="200" width="200"></img>
+            <img src={"Louis.jpg"} height="200" width="200"></img>
             <a href="https://github.com/louis2tch">GitHub</a>
             <a href="https://www.linkedin.com/in/louis-tchamda-9589bb74/">LinkedIn</a>
             <p>Full stack developer.
