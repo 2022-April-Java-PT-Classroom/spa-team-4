@@ -5,6 +5,7 @@
 
 .nasaFont{
     font-family: stars;
+    font-size: 85px;
     text-align: center;
 }
 
@@ -29,8 +30,9 @@
 }
 
 .boxAlign{
+    display: flex;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
 }
 
 p {
