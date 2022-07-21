@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react";
 
 import Axios from "axios";
+import ImageComponent from "../../Components/ImageDisplay/ImageComponent";
 import style from './style.module.scss';
 
 const UserArt = ({userArt}) => {
@@ -83,7 +84,7 @@ const UserArt = ({userArt}) => {
                             <div key={userArt.id}>
                                 <p>Artist Name: {userArt.artistName}</p>
                                 <p>Art Description: {userArt.artDesc}</p>
-                                <p>Art Url: {userArt.artUrl}</p>
+                                <p><ImageComponent url={userArt.artUrl}/></p>
                             </div>
                         ))}
                     </ul>
