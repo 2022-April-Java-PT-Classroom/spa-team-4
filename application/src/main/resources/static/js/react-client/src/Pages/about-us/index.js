@@ -7,7 +7,7 @@ const AboutUs = () => {
             <h2>About Us</h2>
             <h3>Aisha Bluem</h3>
             //inserting professional headshot
-            <img src={"Aisha.jpg"} height="200" width="200"></img>
+            <img src={"application/src/main/resources/static/js/react-client/public/images/Aisha.jpg"} height="200" width="200"></img>
             <a href="https://github.com/acbluem">GitHub</a>
             <a href="https://www.linkedin.com/in/aishabluem/">LinkedIn</a>
             <p>Hi! My name is Aisha (phonetic spelling: ay-zhuh).
@@ -18,7 +18,7 @@ const AboutUs = () => {
 
             <h3> Andera Fells</h3>
             //inserting professional headshot
-            <img src={"Sade.jpg"} height="200" width="200"></img>
+            <img src={"application/src/main/resources/static/js/react-client/public/images/Sade.jpg"} height="200" width="200"></img>
             <a href="https://github.com/anderafells">GitHub</a>
             <a href="https://www.linkedin.com/in/anderafells/">LinkedIn</a>
             <p> I am a full stack developer currently located in Columbus, OH. My love for learning,and taking on challe
@@ -28,7 +28,7 @@ const AboutUs = () => {
 
             <h3>Dane Firestone</h3>
             //inserting professional headshot
-           <img src={"dane.png"} height="200" width="200"></img>
+           <img src={"application/src/main/resources/static/js/react-client/public/images/dane.png"} height="200" width="200"></img>
             <a href="https://github.com/danefirestone">GitHub</a>
             <a href="https://www.linkedin.com/in/danefirestone/">LinkedIn</a>
             <p>My passion for tech started as kid and hasn't stopped evolving. After starting my own Web Design & IT
@@ -39,7 +39,7 @@ const AboutUs = () => {
 
             <h3>Jason Mirwald</h3>
             //inserting professional headshot
-            <img src={"Jason.png"} height="200" width="200"></img>
+            <img src={"application/src/main/resources/static/js/react-client/public/images/Jason.png"} height="200" width="200"></img>
             <a href="https://github.com/jjmirwaldjr">GitHub</a>
             <a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/">LinkedIn</a>
             <p>I am a Military Veteran, Served in the US navy as a Logistic Specialist. I was Honorably
@@ -53,7 +53,7 @@ const AboutUs = () => {
 
             <h3>Louis Tchamba</h3>
             //inserting professional headshot
-            <img src={"Louis.jpg"} height="200" width="200"></img>
+            <img src={"application/src/main/resources/static/js/react-client/public/images/Louis.jpg"} height="200" width="200"></img>
             <a href="https://github.com/louis2tch">GitHub</a>
             <a href="https://www.linkedin.com/in/louis-tchamda-9589bb74/">LinkedIn</a>
             <p>Full stack developer.
@@ -65,7 +65,7 @@ const AboutUs = () => {
 
             <h3>Victor Negron</h3>
             //inserting professional headshot
-            <img src={"Victor.jpg"} height="200" width="200"></img>
+            <img src={"application/src/main/resources/static/js/react-client/public/images/Victor.jpg"} height="200" width="200"></img>
             <a href="https://github.com/VictorLNegron">GitHub</a>
             <a href="https://www.linkedin.com/in/victor-negron-742558235/">LinkedIn</a>
             <p>Hey im Victor, Born in Cleveland, Ohio, I've always wanted to take the leap towards a career in technol
@@ -75,7 +75,7 @@ const AboutUs = () => {
 
             <h3>Zaylet Feliciano</h3>
             //inserting professional headshot
-            <img src={"Zaylet.png"} height="200" width="200"></img>
+            <img src={"application/src/main/resources/static/js/react-client/public/images/Zaylet.png"} height="200" width="200"></img>
             <a href="https://github.com/zaylet">GitHub</a>
             <a href="https://www.linkedin.com/in/zayletfeliciano/">LinkedIn</a>
             <p>My name is Zaylet Feliciano, I am a Software Developer who loves to code and learn something new everyday.
