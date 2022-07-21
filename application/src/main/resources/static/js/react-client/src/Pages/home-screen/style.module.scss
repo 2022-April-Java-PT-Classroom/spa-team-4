@@ -37,6 +37,16 @@ overflow: hidden;
   
 }
 
+.titles{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+
 .picCtn {
   width: 300px;
   height: 300px;

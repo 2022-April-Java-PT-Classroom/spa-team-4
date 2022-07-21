@@ -102,7 +102,22 @@ const HomeScreen = () => {
     if(nasaImage!=null)
     return (
         <div className={style.home}>
+                <div>
+                    <h1>Welcome to our Mystery Educator</h1>
+                    <p>Our mission here at Jac Enterprises is to educaute our clients and provide
+                        great adventures. The Jac Mystery Educator does just that!
+                    </p>
+                    <p>Have fun exploring our endless images and when you've had enough insperation
+                    create your own masterpiece on the "Create Your Own Art" page!
+                    </p>
+                </div>
+                <div className={style.titles}>
+                <h2>NASA</h2>
+                <h2>  MET</h2>
+                <h2>User Gallery</h2>
+                </div>
             <div className={style.container}>
+
                 <div className = {style.item}>
                     <div style = {{width:"300px"}}>
                         { loadingnasaImage ? <h3>Loading ...</h3> :
@@ -124,7 +139,8 @@ const HomeScreen = () => {
                         </div>
                         }
                     </div>
-                     
+                
+                    
                 </div>
 
                 <div className = {style.item}>
