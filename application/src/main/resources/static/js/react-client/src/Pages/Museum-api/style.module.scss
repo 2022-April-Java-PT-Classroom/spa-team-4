@@ -12,3 +12,18 @@
     font-family: art;
     font-size: 250%;
 }
+
+.art {
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.artImg {
+    display: grid;
+    justify-content: center;
+}
+
+.singlePage {
+    background-image: url("../../Components/photos/splashes.png");
+}
+
