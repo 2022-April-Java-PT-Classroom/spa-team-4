@@ -55,6 +55,10 @@ h3 {
   float: right;
 }
 
+.art-instructions li, .save-instructions li {
+  text-align: left;
+}
+
 button {
   border: none;
   background-color: transparent;
