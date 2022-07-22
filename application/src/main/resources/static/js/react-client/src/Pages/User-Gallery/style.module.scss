@@ -6,3 +6,16 @@ form input, textarea{
     border: 1px #444 solid;
     border-radius: 10px;
 }
+
+textarea {
+    display: block;
+    margin : 0 auto;
+  }
+  .centerButton {
+    text-align: center;
+  }
+
+.form__container {
+  background-image: url("../../Components/photos/watercolorArtGallery.png");
+  background-size: cover;
+}  
