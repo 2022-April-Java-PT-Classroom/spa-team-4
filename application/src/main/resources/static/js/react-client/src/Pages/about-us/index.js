@@ -7,6 +7,7 @@ const AboutUs = () => {
                 <div className ={style.aboutUs}>
                     <h2>About Us</h2>
                     <div className={style.bios}>
+                    <div>
                     <img src="images/Aisha.jpg" height="200" width="200"></img>
                     <h3>Aisha Bluem</h3>
                     <a href="https://github.com/acbluem">GitHub</a>
@@ -16,17 +17,19 @@ const AboutUs = () => {
                         where I'd make front-end websites of my favorite cartoon/video game characters in the early and late 2000s.
                          I am a highly focused problem solver with excellent research and troubleshooting skills, committed to
                          breaking into the tech industry.</p>
-                    
+                         </div>
+
+                         <div>    
                     <img src="images/Sade.jpg" height="200" width="200"></img>
                     <h3> Andera Fells</h3>
                     <a href="https://github.com/anderafells">GitHub</a>
                     <a href="https://www.linkedin.com/in/anderafells/">LinkedIn</a>
-                    <p> I am a full stack developer currently located in Columbus, OH. My love for learning,and taking on challe
-                    -nging task has set me on the path of coding. I love to see projects come "alive". I am a dedicated team
+                    <p> I am a full stack developer currently located in Columbus, OH. My love for learning,and taking on challenging task has set me on the path of coding. I love to see projects come "alive". I am a dedicated team
                     player, but I also work well on my own. Outside of development I enjoy researching anything that catches
                     my attention from music,dance, how the mind works etc.. Most importantly I love spending time with my family!</p>
-        
-                    
+                    </div>
+
+                   <div>  
                    <img src="images/dane.png" height="200" width="200"></img>
                    <h3>Dane Firestone</h3>
                     <a href="https://github.com/danefirestone">GitHub</a>
@@ -36,8 +39,9 @@ const AboutUs = () => {
                     the Harrisburg area and start at Amazon. Amazon has provided me the space to grow my career in Information
                     Technology and continually expand my knowledge. I am currently pursuing Full Stack Development through WCCI
                     and cannot wait to see what awaits.</p>
-        
-                    
+                    </div>
+
+                    <div>
                     <img src="images/Jason.png" height="200" width="200"></img>
                     <h3>Jason Mirwald</h3>
                     <a href="https://github.com/jjmirwaldjr">GitHub</a>
@@ -50,8 +54,9 @@ const AboutUs = () => {
                        done a few years at the art institute to learn many different skills, Graphics design, Media
                        Editing, 3D modeling and animations, 2D animation and Photoshop skills. Now I'm looking to
                        continue to expand my skills by picking up both back end and front end development. </p>
-        
-                    
+                       </div>
+
+                       <div>                  
                     <img src="images/Louis.jpg" height="200" width="200"></img>
                     <h3>Louis Tchamba</h3>
                     <a href=  "https://github.com/louis2tch">GitHub</a>
@@ -62,8 +67,9 @@ const AboutUs = () => {
                        Information Systems. For 15 years I have designed, developed and maintained different systems,
                        specifically commercial websites, CRM(customer relationship management) and software. I have
                        advanced experience in code analysis, written by other developers, particularly in PHP.</p>
-        
-                   
+                       </div>
+
+                       <div>                  
                     <img src="images/Victor.jpg" height="200" width="200"></img>
                     <h3>Victor Negron</h3>
                     <a href="https://github.com/VictorLNegron">GitHub</a>
@@ -72,8 +78,9 @@ const AboutUs = () => {
                     -ogy but kept my plans on hold as life got in the way. But in the mean time, I decided to learn to code on
                     my own as I always felt drawn to it. After I get my Certificate in Software Development, I will finally be
                     able to put it to use and realize my dream of transitioning into a career in tech!</p>
-        
-                    
+                    </div>
+
+                    <div>                   
                     <img src="images/Zaylet.png" height="200" width="200"></img>
                     <h3>Zaylet Feliciano</h3>
                     <a href="https://github.com/zaylet">GitHub</a>
@@ -81,6 +88,7 @@ const AboutUs = () => {
                     <p>My name is Zaylet Feliciano, I am a Software Developer who loves to code and learn something new everyday.
                      In 2022, I decided to study at We Can Code IT to be able to pursue this career in the hopes to better my
                         future and start my passion for coding. I hope you enjoy our website as much as I do!</p>
+                        </div>
                 </div>
                 </div>
 

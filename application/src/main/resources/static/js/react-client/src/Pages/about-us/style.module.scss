@@ -14,6 +14,11 @@ $outline: 2px;
   background:linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(192,250,202,1) 43%);
   img {
     margin: 80px 0 40px 0;
+    max-width: fit-content;
+    margin: auto;
+    object-fit: cover;
+    margin-top: 30px;
+  
   }
 
   h2 {	
@@ -23,8 +28,7 @@ $outline: 2px;
     text-align: center;
     line-height: 1;
     margin: 0;
-    top: 22%;
-    left: 44.5%;
+    
     color: $red;
     text-shadow: 
         -1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple, 
@@ -95,19 +99,19 @@ $outline: 2px;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: left;
+    text-align: center;
     
   }
   
     p {
      text-align:start;
-     letter-spacing: 2px;
-     line-height: 20px;
-     margin-bottom: 200px;
+     letter-spacing: 1px;
+     line-height: 35px;
+     margin-bottom: 70px;
    }
   
    a:visited {
-    // text-decoration:none;
+    text-decoration:none;
     color: #444;
     text-align: center;
     align-content:space-between;
@@ -119,10 +123,20 @@ $outline: 2px;
   }
   
   .bios{
-    display:flex-block;
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+
     -webkit-column-count: 7;
     -webkit-column-gap: 10px;
      font-size: auto;
+
+     @media(max-width: 710px){
+       display: flex;
+       flex-direction: column;
+     }
   }  
 }
 
