@@ -6,7 +6,7 @@ const AboutUs = () => {
 
                 <div className ={style.aboutUs}>
                     <h2>About Us</h2>
-                    <div className={style.container}>
+                    <div className={style.bios}>
                     <img src="images/Aisha.jpg" height="200" width="200"></img>
                     <h3>Aisha Bluem</h3>
                     <a href="https://github.com/acbluem">GitHub</a>
