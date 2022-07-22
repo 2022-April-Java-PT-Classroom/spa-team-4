@@ -22,9 +22,9 @@ h2 {
 	text-transform: uppercase;
 	font-size: 16vw;
 	text-align: center;
-	line-height: 1;
+  line-height: 1;
 	margin: 0;
-	top: 50%;
+	top: 15%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
@@ -94,18 +94,44 @@ h2 {
 
 
 h3 {
-  font-size: 50px;
+
+  font-size: 30px;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: left;
+  
 }
 
-p {
-  line-height: 20px;
-  margin-bottom: 20px;
+  p {
+   text-align:start;
+   letter-spacing: 2px;
+   line-height: 20px;
+   margin-bottom: 200px;
+ }
+
+img {
+  margin: 80px 0 40px 0;
 }
 
+a:visited {
+  // text-decoration:none;
+  color: #444;
+  text-align: center;
+  align-content:space-between;
+}
 
+a:active {
+  text-decoration:none;
+  
+}
 
+.container{
+  display:flex-block;
+  -webkit-column-count: 7;
+  -webkit-column-gap: 10px;
+   font-size: auto;
+  
+}
 
 
