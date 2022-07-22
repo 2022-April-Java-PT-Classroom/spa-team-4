@@ -10,13 +10,6 @@ $purple:#6e1f58;
 
 $outline: 2px;
 
-html,
-body {
-	width: 100%;
-	height: 100%;
-	
-}
-
 .aboutUs {
   background:linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(192,250,202,1) 43%);
   img {
@@ -32,8 +25,6 @@ body {
     margin: 0;
     top: 22%;
     left: 44.5%;
-    transform: translate(-50%, -50%);
-    position: absolute;
     color: $red;
     text-shadow: 
         -1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple, 
@@ -46,7 +37,6 @@ body {
     &:after,
     &:before {
       content: attr(data-heading);
-      position: absolute;
       overflow: hidden;
       left: 0;		
       width: 100%;
