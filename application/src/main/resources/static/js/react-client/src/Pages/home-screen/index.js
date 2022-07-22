@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import style from './style.module.scss';
+
 import noImage from '../../assets/images/noimages.jpg';
+
 
 
 
@@ -53,10 +55,10 @@ const HomeScreen = () => {
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
+
         var museum = [7000, 400000, 450000, 460000, 4500, 4501, 12000]
         var museumIndex = Math.floor(Math.random() * (museum.length));
     
-
         const fetchData = async () => {
             const museumArt = await Axios(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${museum[museumIndex]}`);
 
@@ -78,7 +80,7 @@ const HomeScreen = () => {
     const [loadingUserArt, setLoadingUserArt] = useState(true),
     [gallery, setGallery] = useState(null);
 
-    var galleryIndex = Math.floor(Math.random() * 2);
+    var galleryIndex = Math.floor(Math.random() * 5);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -97,6 +99,7 @@ const HomeScreen = () => {
         return () => clearTimeout(timer);
 
     }, [gallery]);
+
 
 
     if(nasaImage!=null)
