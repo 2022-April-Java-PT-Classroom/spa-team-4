@@ -49,9 +49,11 @@ const UserSubmmited = ({userSubmmited}) => {
                     <input type="text" name="artTitle" value={UserArt.artTitle} onChange={handleChange} placeholder='Enter the art Title' />
                     <textarea name="artDesc" value={UserArt.artDesc} onChange={handleChange} placeholder='Enter the art Description' />
                     <input type="text" name="artUrl" value={UserArt.artUrl} onChange={handleChange} placeholder='Enter the art Url picture' />
+                    <div className={style.centerButton}>
                     <button type="submit">Add item in Gallery</button>
-            </form>
-           
+
+                    </div>
+            </form>          
            
         </div>
 
