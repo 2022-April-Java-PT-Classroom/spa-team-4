@@ -6,7 +6,7 @@ import style from "./style.module.scss"
 
 const Nasa = () => {
 
-  const [nasaImages, setImages] = useState(null);
+  const [nasaInfo, setInfo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -15,7 +15,7 @@ const Nasa = () => {
 
     const fetchData = async () => {
       const nasa = await Axios(`https://images-api.nasa.gov/search?q=${searchTerm}`);
-      setImages(nasa.data.collection.items);
+      setInfo(nasa.data.collection.items);
     };
 
     fetchData();
@@ -37,7 +37,7 @@ const Nasa = () => {
       </div>
       <div className={style.imageCentering}>
         <section className={style.grid}>
-          <NasaImages images={nasaImages} />
+          <NasaImages images={nasaInfo} />
         </section>
       </div>
     </div>
