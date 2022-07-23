@@ -105,19 +105,28 @@ const HomeScreen = () => {
     if(nasaImage!=null)
     return (
         <div className={style.home}>
-                <div>
-                    <h1>Welcome to our Mystery Educator</h1>
-                    <p>Our mission here at Jac Enterprises is to educaute our clients and provide
+                <div className={style.titles}>
+                    <h1 className={style.welcome}>Welcome to our Mystery Educator</h1>
+                    <p className={style.welcomep}>Our mission here at Jac Enterprises is to educaute our clients and provide
                         great adventures. The Jac Mystery Educator does just that!
                     </p>
-                    <p>Have fun exploring our endless images and when you've had enough insperation
+                    <p className={style.welcomep}>Have fun exploring our endless images! And, when you've had enough inspiration,
                     create your own masterpiece on the "Create Your Own Art" page!
                     </p>
                 </div>
-                <div className={style.titles}>
-                <h2>NASA</h2>
-                <h2>  MET</h2>
-                <h2>User Gallery</h2>
+                <div className={style.titlecontainers}>
+                    <div className={style.titleitems}>
+                        <h2 className={style.nasatitle}>NASA</h2>
+                        <p>Check out these images selected from the NASA API!</p>
+                    </div>
+                    <div className={style.titleitems}>
+                        <h2 className={style.mettitle}>Met Museum of Art</h2>
+                        <p>Check out these images selected from the MET Gallery!</p>
+                    </div>
+                    <div className={style.titleitems}>
+                        <h2 className={style.usertitle}>User Gallery</h2>
+                        <p>Check out some fellow user submissions in our User Gallery!</p>
+                    </div>
                 </div>
             <div className={style.container}>
 

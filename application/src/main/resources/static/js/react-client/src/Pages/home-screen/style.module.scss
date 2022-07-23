@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Roboto:ital,wght@1,100&display=swap');
+
+
+
+.home{
+  background-image: url("../../Components/photos/watercolor.webp");
+  
+}
+
 .container{
   display: flex;
 justify-content: space-around;
@@ -10,7 +19,8 @@ height: 100%;
   height: 300px;
   border: 1px rgb(153, 89, 105) solid;
   overflow: hidden;
-  margin: 20px 0;
+  margin-top: 20px 0;
+  margin-bottom: 70px;
   border-radius:20px;
   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.52);
 -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.52);
@@ -37,13 +47,65 @@ overflow: hidden;
   
 }
 
-.titles{
+.titlecontainers{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 100%;  
   text-align: center;
-  padding-left: 5%;
-  padding-right: 10%;
+  
+}
+
+.titleitems{
+  text-align: center;
+  width: 300px;
+  height: 110px;
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius:20px;
+  text-shadow: 2px 2px #fff;
+}
+
+.nasatitle{
+  font-size: 30px;
+  margin: 0 0 1px 0;
+  padding: 0 5px 1px 10px;
+  overflow: hidden;
+  font-family: stars;
+    src: url("../../Components/fonts/StarcruiserExpandedItalic-LgGg.ttf");
+}
+
+.mettitle{
+  font-size: 30px;
+  margin: 0 0 0px 0;
+  padding: 0 5px 3px 10px;
+  overflow: hidden;
+  font-family: art;
+  src: url("../../Components/fonts/RotheDemoRegular-vLvZ.ttf");
+}
+
+.usertitle{
+  font-size: 30px;
+  margin: 0 0 1px 0;
+  padding: 0 5px 1px 10px;
+  overflow: hidden;
+}
+
+.titles{
+  text-align: center;
+  font-size: 20px;
+
+}
+.welcome{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px #fff;
+}
+
+.welcomep{
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px #fff;
 }
 
 
